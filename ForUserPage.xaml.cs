@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace TestikC
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ForUserPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ForUserPage : Page
     {
-        public MainWindow()
+        public ForUserPage()
         {
             InitializeComponent();
         }
 
-        private void PageFrame_Navigated(object sender, NavigationEventArgs e)
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -37,12 +37,7 @@ namespace TestikC
 
         private void TestGo_Click(object sender, RoutedEventArgs e)
         {
-           
-            TestWindow testWindow = new TestWindow();
-            ForUserPage page = new ForUserPage();
-            testWindow.Content = page;
-            testWindow.Show();
-            this.Close();
+
         }
     }
 }

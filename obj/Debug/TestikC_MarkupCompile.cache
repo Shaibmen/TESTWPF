@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Projects\C\TestikC\obj\Debug\
+D:\Projects\C#\TESTWPF\obj\Debug\
 TestikC
 none
 false
 DEBUG;TRACE
-C:\Projects\C\TestikC\App.xaml
-1219584333
+D:\Projects\C#\TESTWPF\App.xaml
+3-545128750
 
-51579654133
+71128115908
 13-38814620
-MainWindow.xaml;
+ForUserPage.xaml;MainWindow.xaml;TestWindow.xaml;
 
 False
 

@@ -10,22 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TestikC
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для TestWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TestWindow : Window
     {
-        public MainWindow()
+        public TestWindow()
         {
             InitializeComponent();
         }
 
-        private void PageFrame_Navigated(object sender, NavigationEventArgs e)
+        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
         {
 
         }
@@ -37,12 +36,12 @@ namespace TestikC
 
         private void TestGo_Click(object sender, RoutedEventArgs e)
         {
-           
-            TestWindow testWindow = new TestWindow();
-            ForUserPage page = new ForUserPage();
-            testWindow.Content = page;
-            testWindow.Show();
-            this.Close();
+
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

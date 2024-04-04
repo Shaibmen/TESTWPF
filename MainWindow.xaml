@@ -24,5 +24,6 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="TestGo" Grid.Column="1" Grid.Row="2" Content="Пройти тест" Click="TestGo_Click" Height="50px"/>
         <Button x:Name="CreateTest" Grid.Column="1" Grid.Row="4" Content="Отредактировать тест" Click="CreateTest_Click" Height="50px"/>
+        <TextBox x:Name="TextTextCreate" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Height="20px" Text="Введите секретное слово" TextAlignment="Center"/>
     </Grid>
 </Window>
