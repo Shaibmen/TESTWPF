@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,26 +19,35 @@ using System.Windows.Shapes;
 namespace TestikC
 {
     /// <summary>
-    /// Логика взаимодействия для ForUserPage.xaml
+    /// Логика взаимодействия для CreatorPage.xaml
     /// </summary>
-    public partial class ForUserPage : Page
+    public partial class CreatorPage : Page, INotifyPropertyChanged
     {
-        ObservableCollection<TestClass> testClasses = new ObservableCollection<TestClass>();
+        private ObservableCollection<TestClass> testClasses = new ObservableCollection<TestClass>();
 
-        public ForUserPage()
+
+
+        public CreatorPage()
         {
             InitializeComponent();
-            DataContext = this;
+        }
+
+        public ObservableCollection<TestClass> TestClasses
+        {
+            get { return testClasses; }
+            set
+            {
+                testClasses = value;
+                OnPropertyChanged();
+            }
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Window currentWindow = Window.GetWindow(this);
             currentWindow.Close();
-
         }
 
         private void CreateTest_Click(object sender, RoutedEventArgs e)
@@ -52,6 +63,13 @@ namespace TestikC
         private void TEST_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

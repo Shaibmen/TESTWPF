@@ -32,3 +32,5 @@ D:\Projects\C#\TESTWPF\obj\Debug\TestikC.csproj.GenerateResource.cache
 D:\Projects\C#\TESTWPF\obj\Debug\TestikC.csproj.CoreCompileInputs.cache
 D:\Projects\C#\TESTWPF\obj\Debug\ForUserPage.g.cs
 D:\Projects\C#\TESTWPF\obj\Debug\ForUserPage.baml
+D:\Projects\C#\TESTWPF\obj\Debug\CreatorPage.g.cs
+D:\Projects\C#\TESTWPF\obj\Debug\CreatorPage.baml

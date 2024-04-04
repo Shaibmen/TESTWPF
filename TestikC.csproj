@@ -55,12 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreatorPage.xaml.cs">
+      <DependentUpon>CreatorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ForUserPage.xaml.cs">
       <DependentUpon>ForUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestClass.cs" />
     <Compile Include="TestWindow.xaml.cs">
       <DependentUpon>TestWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="CreatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ForUserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

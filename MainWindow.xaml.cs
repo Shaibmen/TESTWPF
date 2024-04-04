@@ -32,6 +32,14 @@ namespace TestikC
 
         private void CreateTest_Click(object sender, RoutedEventArgs e)
         {
+            if (TextTextCreate.Text == "jopa")
+            {
+                TestWindow testWindow = new TestWindow();
+                CreatorPage page = new CreatorPage();
+                testWindow.Content = page;
+                testWindow.Show();
+                this.Close();
+            }
 
         }
 
