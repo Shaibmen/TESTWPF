@@ -45,12 +45,24 @@ namespace TestikC
 
         private void TestGo_Click(object sender, RoutedEventArgs e)
         {
-           
-            TestWindow testWindow = new TestWindow();
-            ForUserPage page = new ForUserPage();
-            testWindow.Content = page;
-            testWindow.Show();
-            this.Close();
+            CreatorPage creatorPage = new CreatorPage();
+            if (creatorPage.TEST.Items.Count == 0)
+            {
+                TestWindow testWindow = new TestWindow();
+                NULLPage nullPage = new NULLPage();
+                testWindow.Content = nullPage;
+                testWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                TestWindow testWindow = new TestWindow();
+                ForUserPage page = new ForUserPage();
+                testWindow.Content = page;
+                testWindow.Show();
+                this.Close();
+            }
+            
         }
     }
 }

@@ -7,7 +7,8 @@
       xmlns:local="clr-namespace:TestikC"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="CreatorPage">
+      Title="CreatorPage"
+      MinHeight="300" MinWidth="300">
 
     <Grid>
         <Grid>
@@ -16,8 +17,8 @@
                 <RowDefinition />
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -27,9 +28,17 @@
             <Button x:Name="TestGo" Grid.Column="2" Grid.Row="0" Content="Пройти тест" Click="TestGo_Click" Height="40px"/>
             <Button x:Name="CreateTest" Grid.Column="1" Grid.Row="0" Content="Отредактировать тест" Click="CreateTest_Click"/>
             <Button x:Name="ExitButton" Grid.Column="0" Grid.Row="0" Content="Выход" Click="ExitButton_Click"/>
-            <DataGrid x:Name="TEST" Grid.Row="1" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="3" ItemsSource="{Binding TestClasses}" SelectionChanged="TEST_SelectionChanged">
+            <DataGrid x:Name="TEST" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" ItemsSource="{Binding TestClasses}" SelectionChanged="TEST_SelectionChanged">
             </DataGrid>
-
+            <StackPanel Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" >
+                <TextBox x:Name="NameTest" Text="Название" MaxLength="50"/>
+                <TextBox x:Name="DescriprionTest" Text="Описание" MaxLength="50"/>
+                <TextBox x:Name="FirstAnswerTest" Text="Первый ответ" MaxLength="100"/>
+                <TextBox x:Name="SecondAnswerTest" Text="Второй ответ" MaxLength="11"/>
+                <TextBox x:Name="ThirdAnswerTest" Text="Третий ответ" MaxLength="11"/>
+            </StackPanel>
+            <ComboBox x:Name="CorrectAnswerBox"  Grid.Column="1" Grid.Row="5" Width="50px" Height="25px" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged"/>
+            <Button Grid.Column="2" Grid.Row="5" Content="Доабвить" Click="Button_Click"/>
         </Grid>
     </Grid>
 </Page>

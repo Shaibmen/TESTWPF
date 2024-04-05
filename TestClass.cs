@@ -11,13 +11,13 @@ namespace TestikC
 
         public string Name { get; set; }
         public string Description { get; set; }
-        public int FirstAnswer { get; set; }
-        public int SecondAnswer { get; set; }
-        public int ThirdAnswer { get; set; }
+        public string FirstAnswer { get; set; }
+        public string SecondAnswer { get; set; }
+        public string ThirdAnswer { get; set; }
 
         public Answer CorrectAnswer { get; set; }
 
-        public TestClass(string name, string description, int firstAnswer, int secondAnswer, int thirdAnswer, Answer correctAnswer)
+        public TestClass(string name, string description, string firstAnswer, string secondAnswer, string thirdAnswer, Answer correctAnswer)
         {
             Name = name;
             Description = description;
@@ -29,8 +29,8 @@ namespace TestikC
     }
     public enum Answer
     {
-        FirstAnswer,
-        SecondAnswer,
-        ThirdAnswer
+        First = 0,
+        Second = 1,
+        Third = 2
     }
 }

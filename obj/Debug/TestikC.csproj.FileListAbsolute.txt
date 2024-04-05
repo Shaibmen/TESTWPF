@@ -34,3 +34,8 @@ D:\Projects\C#\TESTWPF\obj\Debug\ForUserPage.g.cs
 D:\Projects\C#\TESTWPF\obj\Debug\ForUserPage.baml
 D:\Projects\C#\TESTWPF\obj\Debug\CreatorPage.g.cs
 D:\Projects\C#\TESTWPF\obj\Debug\CreatorPage.baml
+D:\Projects\C#\TESTWPF\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\C#\TESTWPF\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\C#\TESTWPF\obj\Debug\TestikC.csproj.CopyComplete
+D:\Projects\C#\TESTWPF\obj\Debug\NULLPage.g.cs
+D:\Projects\C#\TESTWPF\obj\Debug\NULLPage.baml

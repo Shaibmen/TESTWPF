@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "Название",
+    "Description": "Описание",
+    "FirstAnswer": "Первый ответ",
+    "SecondAnswer": "Второй ответ",
+    "ThirdAnswer": "Третий ответ",
+    "CorrectAnswer": 0
+  }
+]
